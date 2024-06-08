@@ -1,7 +1,7 @@
-# Methodology 2
+# Methodology 1
 
 ### Introduction:
-This is the second evaluation metric we designed. Our goal is to compare the accuracy score of each model by categories. We first provide models with 600 challenging Math questions from different categories to solve it. Then we provide them with a specific prompt in order to make it easier to collect output. Then we compare their accuracy score by different categories.
+This is the first evaluation metric we designed. Our goal is to compare the accuracy score of each model by categories. We first provide models with 600 challenging Math questions from different categories to solve it. Then we provide them with a specific prompt in order to make it easier to collect output. Then we compare their accuracy score by different categories.
 
 ### Files:
 #### challenge_test.json

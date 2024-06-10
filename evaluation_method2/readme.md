@@ -16,10 +16,14 @@ output of metrics and responses to each problem with gemini
 Notes:
 The way we collect results from models' answer to those 60 questions depends on the models themselves. We made a prompt for the language model to follow. So basically we provide the questions and a given format to reply in. In this experiment, we didn’t include falcon7B because it not only fails to follow the prompt, but it also fails to answer any of the questions correctly.
 
+
 Proof format addition:
 ‘Format your response as follows with notes if any: [Proof: "<answer>", Notes: "<notes>"]’
+
+
 Non-proof format addition:
 ‘Format your response strictly as follows: {My Answer: "<answer>", Explanation: "<explanation>"]’
+
 
 This is an example:
 

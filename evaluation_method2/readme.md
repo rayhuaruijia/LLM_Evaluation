@@ -21,11 +21,11 @@ The way we collect results from models' answer to those 60 questions depends on 
 
 
 Proof format addition:
-‘Format your response as follows with notes if any: [Proof: "<answer>", Notes: "<notes>"]’
+‘Format your response as follows with notes if any: [Proof: "\<answer\>", Notes: "\<notes\>"]’
 
 
 Non-proof format addition:
-‘Format your response strictly as follows: {My Answer: "\<answer\>", Explanation: "<explanation>"]’
+‘Format your response strictly as follows: {My Answer: "\<answer\>", Explanation: "\<explanation\>"]’
 
 
 This is an example:

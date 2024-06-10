@@ -8,6 +8,7 @@ This is the dataset we chose to use. It contains 60 challenging Math questions o
 
 results_chat_df_csv
 output of metrics and responses to each problem with chat gpt
+
 result_gem_df_csv
 output of metrics and responses to each problem with gemini
 

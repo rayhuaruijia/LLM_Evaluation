@@ -4,12 +4,15 @@ This is the second evaluation metric we designed. Our goal is to evaluate the re
 Files:
 
 CS263_Project_Dataset.csv
+
 This is the dataset we chose to use. It contains 60 challenging Math questions of proofs and non proofs
 
 results_chat_df_csv
+
 output of metrics and responses to each problem with chat gpt
 
 result_gem_df_csv
+
 output of metrics and responses to each problem with gemini
 
 

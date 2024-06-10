@@ -25,7 +25,7 @@ Proof format addition:
 
 
 Non-proof format addition:
-‘Format your response strictly as follows: {My Answer: "<answer>", Explanation: "<explanation>"]’
+‘Format your response strictly as follows: {My Answer: "\<answer\>", Explanation: "<explanation>"]’
 
 
 This is an example:

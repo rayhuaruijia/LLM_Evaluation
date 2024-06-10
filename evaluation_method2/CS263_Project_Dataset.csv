@@ -1,0 +1,150 @@
+Prompt,Answer
+Sally lives 3 miles directly West of Jimmy. Kenny lives 5 miles directly North of Jimmy. What is the distance from Sally’s house and Kenny’s House?,"Due to pythagorean theorem, the answer is the square root of (3^2) + (5^2), or in other words, the square root of 34 which is 6.08 miles. This is due to the fact that a line west and north from Jimmy’s house create a right triangle, where the distance from Sally’s house to Kenny’s house is the hypotenuse."
+Create an identity for the expression 2tan𝜃sec𝜃 by rewriting strictly in terms of sine.,"Using the definitions of tan, sec, and the trig identity sin^2(𝜃) + cos^2(𝜃) = 1
+We have
+2tan𝜃sec𝜃 = 2(sin𝜃/cos𝜃)(1/cos𝜃) = 2sin𝜃/cos^2𝜃 = 2sin𝜃/(1 - sin^2𝜃)
+
+And after substituting (1 - sin^2𝜃) for cos^2𝜃:
+
+2tan𝜃sec𝜃 = 2sin𝜃/(1 - sin^2𝜃)"
+Prove that the composition of any two decreasing functions is increasing.,"Let f and g be given decreasing functions. We claim that f ◦ g is increasing. Given numbers x < y, we need to show that (f ◦ g)(x) < (f ◦ g)(y). First note that because g is decreasing, g(x) > g(y) or equivalently g(y) < g(x). Meanwhile, f is decreasing. Applying the definition of “decreasing” to f and the numbers g(y) and g(x), we see that f(g(y)) > f(g(x)) or equivalently (f ◦ g)(x) < (f ◦ g)(y). As x, y were arbitrary numbers satisfying x < y, we’ve shown that f ◦ g is increasing. (And as f and g were arbitrary decreasing functions, we’ve shown that the composition of any two decreasing functions is increasing.)"
+Prove that the sum of any two decreasing functions is decreasing. (writing things a little more compactly than in the previous problem).,"Let f and g be decreasing functions, and x < y. As f is decreasing, f(x) > f(y) Likewise g(x) > g(y) Adding these two inequalities together, we see that (f + g)(x) = f(x) + g(x) > f(y) + g(y) = (f + g)(y), so f + g is decreasing."
+"Prove that the function g : N → N, defined by g(n) = bn/3c, is surjective.","To prove a function, f : A → B is surjective, or onto, we must show f(A) = B. In other words, we must show the two sets, f(A) and B, are equal. We already know that f(A) ⊆ B if f is a well-defined function. While most functions encountered in a course using algebraic functions are well-defined, this should not be an automatic assumption in general. With that said, though, we will usually assume the functions given to us are well defined, so all that must be shown is that B ⊆ f(A). To do this we may use the definition of a subset: show every element of B is also an element of f(A). Thus we begin the proof by fixing an arbitrary element of B. We then use the tools at our disposal (definition of the function, algebra, any other known information) to show that this arbitrary element must in fact be the image of some element of A.
+
+Proof. Let n ∈ N. Notice that g(3n) = b(3n)/3c = b(3n)/3c = n. Since 3n ∈ N, this shows n is in the range of g. Hence g is surjective."
+"Recall that a real polynomial of degree n is a real-valued function of the form f(x) = a0 + a1x + · · · + anx n , in which the ak are real constants and an 6= 0. A real zero of such a polynomial is a real number b such that f(b) = 0.","Suppose such a real polynomial f(x) of degree n and with an = 1 has n distinct real zeros, b1 < ... < bn. Let [c, d] be an interval such that c < b1 < ... < bn < d, Then there is a positive number ε > 0 such that if g(x) is any differentiable function for which |g(x)| < ε, for every x ∈ [c, d], then f(x) + g(x) has at least n zeros in [c, d]. 
+
+Proof: We do this in Steps Step One: f (x ) = (x − b1 )(x − b2 )...(x − bn). You may already have seen this, but in any case I am going to prove it a little later, and so will skip the proof for now. 
+
+Step Two: In each of the intervals [c, b1 ),(b1 , b2 ), ...,(bn, d], f (x )is never zero and therefore has constant sign. 
+
+proof: Since f(x) = (x − b1)(x − b2)...(x − bn), it follows that f(x) is non-zero in each of these intervals. Moreover, if there were two points x < y in one of these intervals at which f had opposite signs, then by the Intermediate Value Theorem, for some z between x and y, it would be true that f(z) was zero, which is not the case. Step Three: The values f 0 (bk ) of the derivative of f are non-zero. proof: Write f(x) = (x − bk)h(x). By the product rule, f 0 (bk) = h(bk) 6= 0. Step Four: The signs of the values of f(x) in the intervals (c, b1 ),(b1 , b2 ), ...,(bn, d) alternate from interval to interval. proof: First consider the case that f(x) is positive in the interval to the right of bk. Then we compute the derivative at bk by taking the limit as x approaches bk from the right: f 0 (bk) = limh→0 f(bk + h) − f(bk) h ≥ 0. Since f 0 (bk) 6= 0, f0 (bk) > 0. Since the derivative at bk is positive the function must be increasing in an interval around bk. Since its value at bk is zero, it must be negative in the interval to the left of bk. The other case is when f(x) is negative in the interval to the right of bk. Then, when we compute the derivative as a limit from the right we see that f 0 (bk) ≤ 0 and so it must be negative. In this case the function is decreasing near bk, and so it must be positive to the left. Step Five: Completion of the proof: Pick any numbers: y0 ∈ (c, b1) yi ∈ (bi , bi+1), 1 ≤ i ≤ n − 1, and yn ∈ (bn, d). Then each f(yi) 6= 0. Choose ε to be a positive number such that ε < |f(yi)|, i = 0, · · · , n. Now suppose g(x) is any differentiable function in the interval [c, d] such that |g(x)| < ε, for every x ∈ [c, d]. 
+Then for each i, f(yi)+g(yi) has the same sign as f(yi). Therefore, f(yi)+g(yi) and f(yi+1) + g(yi+1) have opposite signs. Therefore, by the Intermediate Value Theorem, there are points zi in the intervals (yi , yi+1) such that (f + g)(zi) = 0. q.e.d."
+There are infinitely many distinct prime numbers.,"Proof. Suppose that there are finitely many distinct primes p1, p2.....pr. Consider c = p1p2...pr + 1. Clearly c > 1. By the Fundamental Theorem of Arithmetic, c is divisible by at least one prime, say p1. Then c = p1d for some d ∈ Z. Hence we have p1(d − p2...pr) = c − p1p2..pr = 1. This is a contradiction as no prime divides 1. Hence there are infinitely many distinct primes."
+"The ratio of boys to girls in a class is 5/4. If a few boys leave the class, the ratio of boys to girls would become the reciprocal of the earlier ratio, which of the following CANNOT be the possible number of boys and girls in the class?","In this problem, we have a class with 5 times x boys and 4 times x girls initially. Let y be the number of boys who leave the class.
+We form an equation based on the reciprocal ratio of 54 to 45, which simplifies to:
+""25x - 5y"" equals ""16x"".
+By rearranging, we find:
+""9x"" equals ""5y"".
+Since x and y are positive integers, we identify possible pairs such as (5, 9), (10, 18), (15, 27), (20, 36), and so on.
+The total number of boys and girls in the class is represented by ""9x"". For different values of x, we calculate:
+""9x"" gives ""45, 90, 135, 180, ..."".
+Therefore, the possible numbers of boys and girls in the class are 45, 90, 135, 180, etc. The number 120 is not among the possible combinations based on the values derived from ""9x""."
+"If n is a natural number and n > 1, prove that n 3 − 1 is divisible by n − 1.","Proof: let n be a natural number and suppose n > 1. Direct multiplication gives (n − 1)(n^2 + n + 1) = n^3 − 1. Since n^2 + n + 1 is a natural number, n^3 − 1 is divisible by n − 1. q.e.d."
+Prove that if x is a real number and x > 1 then x^2 > x.,"Proof: x^2 − x = x(x − 1). Since x > 1, x and x − 1 are both positive. Therefore x(x − 1) is positive. Therefore x^2 > x. q.e.d."
+"Prove If p < n are natural numbers then for some natural number m ≤ n and for some integer r with 0 ≤ r < p, n=mp +r. (The number r is called the remainder.)","Let p < n be natural numbers. If k > n then for any r ≥ 0 kp ≥ k > n. Thus if mp + r = n it must be true that mp ≤ n and so m ≤ n. Since 1 ≤ n we can choose m to be the largest natural number such that mp ≤ n. Then n − mp ≥ 0. On the other hand, if n − mp ≥ p then (n − mp) − p > 0 and so n − (m + 1)p = (n − mp) − p > 0. Thus m was not the largest natural number which multiplied by p gave an answer at most n, and we assumed it was. Thus n − mp < p and we may set r = n − mp. q.e.d."
+"To preserve the ecological balance of a reserve, a number of lions were released in the reserve in 2000. Initially, there were only 5 lions in the reserve. After the observation of a few years, a function L(n)=(n+1)^2+(n+1)+15
+ was developed to represent the number of lions in the reserve, where L(n)
+represents the number of lions and n
+ represents the number of years after which they were released. Assume that no lion died during this period. Based on the above function, which of the following statements are correct? (without calculator)
+
+
+* 10 lions were released in the reserve in 2000.
+* The increase in the number of lions in the third year was 8.
+* The total number of lions in the beginning of the third year was 27.","Given: L(n)=(n+1)^2+(n+1)+15
+The function L(n)=(n+1)^2+(n+1)+15
+ represents the number of lions in the reserve
+
+This is a quadratic function. The constant term in the function L(n)=(n+1)^2+(n+1)+15
+ represents 'the number of lions initially present plus the number of lions released in the reserve.'
+
+Let's expand the function and get the value of the constant term.
+
+L(n)=(n+1)^2+(n+1)+15
+=>L(n)=n^2+2n+1+n+1+15
+=>L(n)=n^2+3n+17
+So, '17' represents 'the number of lions initially present plus the number of lions released in the reserve.' Thus, the number of lions released in the reserve =17−5=12≠8.
+Thus, Statement I incorrect.
+
+Let's move to Statement II: The increase in the number of lions in the third year was 8.
+
+The increase in the number of lions in the third year
+
+=L(3)−L(2)=[3^2+3×3+17]−[2^2+3×2+17]=8.
+Thus, Statement II is correct.
+
+Let's move to Statement III: The total number of lions in the beginning of the third year was 27.
+
+The statement ""The total number of lions in the beginning of the third year was 27"" means ""the total number of lions by the end of the second year was 27.""
+
+Thus, by plugging-in the value of n=2 
+in L(n)=n^2+3n+17
+, we get
+
+L(2)=2^2+3×2+17=4+6+17=27."
+If |2x−7|≤8 what is the greatest possible value of |x−7|? (without calculator) show work.,"Given: |2x−7|≤8
+±(2x−7)≤8
+Case 1: Taking (2x−7)
+ as positive
+
+(2x−7)≤8
+=>x≤ (15/2)
+Case 2: Taking (2x−7)
+ as negative
+
+−(2x−7)≤8
+−(2x−7)≤8; multiplying the inequality by −1; note the change of sign of the equality
+
+=>2x−7≥−8
+=>2x≥−1
+=>x≥ (−1/2)
+Now let's calculate the value of |x−7|.
+We have:
+
+(−1/2) ≤x≤ (15/2)
+Subtracting 7 from the inequality, we get
+
+(−1/2)−7≤x−7≤ (15/2) −7
+(−15/2) ≤x−7≤ (1/2)
+Taking the absolute values, we get
+
+∣(−15/2)∣ ≤|x−7|≤ ∣1/2∣
+(15/2) ≤|x−7|≤ (1/2)
+The greatest of the two values (15/2)
+ and (1/2) is (15/2)."
+Sarah has 8 red apples and 12 green apples. She decides to give 3 red apples and 5 green apples to her friend. How many apples does Sarah have left?,"Sarah has 8 red apples and 12 green apples. She gives away 3 red apples and 5 green apples: 8 - 3 = 5 red apples left, and 12 - 5 = 7 green apples left. So, Sarah has 5 + 7 = 12 apples left."
+Tom's backpack has 4 books. Each book weighs 1.5 pounds. He also carries a laptop that weighs 3 pounds. What is the total weight of Tom's backpack?,"Tom has 4 books, each weighing 1.5 pounds: 4*1.5 = 6 pounds. His laptop weighs 3 pounds. The total weight of his backpack is 6 + 3 = 9 pounds."
+Lisa needs to bake 3 batches of cookies for a party. Each batch requires 2 cups of sugar. She already has 2 cups of sugar. How many more cups of sugar does she need?,"Each batch requires 2 cups of sugar: 3*2 = 6 cups. She already has 2 cups, so she needs 6 - 2 = 4 more cups of sugar."
+John and Mike are planting trees. John can plant 5 trees in an hour  and Mike can plant 7 trees in an hour. How many trees can they plant together in 3 hours?,"John plants 5 trees per hour, and Mike plants 7 trees per hour. Together, they plant 5 + 7 = 12 trees per hour. In 3 hours, they can plant 3*12 = 36 trees."
+Emma has a ribbon that is 124 inches long. She cuts it into pieces that are 8 inches each. How many pieces does she have?,"Emma's ribbon is 120 inches long, and she cuts it into 8-inch pieces: 120 / 8 = 15 pieces with 4 inches remaining as extra."
+A recipe calls for 2/3 cup of milk. If Jessica wants to make a double batch  how much milk does she need?,"The recipe calls for 2/3 cup of milk. For a double batch, she needs 2*(2/3) = 4/3 = 1 and 1/3 cups of milk."
+David is saving money to buy a bicycle. He saves $15 each week. How many weeks will it take him to save $190?,"David saves $15 per week. To save $190, he needs 190 / 15 = 12.67 weeks. Therefore, to save for the $190, David needs to save for 12 weeks plus 1, 13 weeks."
+A school has 400 students. If 3/4 of them are participating in sports  how many students are not participating?,"3/4 of 400 students are participating: (3/4)*400 = 300 students. So, 400 - 300 = 100 students are not participating."
+Anna bought 3 dresses for $45 each and 2 pairs of shoes for $30 each. What is the total cost of her purchase?,Anna bought 3 dresses for $45 each: 3*45 = 135. She also bought 2 pairs of shoes for $30 each: 2*30 = 60. The total cost is 135 + 60 = $195.
+A water tank can hold 500 gallons of water. If the tank is currently 3/7 full  how many more gallons are needed to fill the tank?,"The tank holds 500 gallons and is 3/7 full: (3/7)*500 = 214.29 gallons. To fill the tank, it needs 500 - 214.29 = 285.71 more gallons."
+Mark is reading a book with 240 pages. He has read 3/8 of the book. How many pages has he read?,Mark has read 3/8 of the book: (3/8)*240 = 90 pages.
+Samantha has 24 candies. She wants to share them equally among her 6 friends. How many candies does each friend get?,Samantha has 24 candies and 6 friends: 24 / 6 = 4 candies per friend.
+A farmer has 120 apples. He packs them into boxes with 10 apples each. How many boxes does he need?,The farmer has 120 apples and packs them into boxes with 10 apples each: 120 / 10 = 12 boxes.
+If a train travels at a speed of 60 miles per hour for 2 hours how far does it travel?,120 miles
+John has 5 apples and gives 2 to his friend. How many apples does he have left?,3 apples
+A rectangle has a length of 10 units and a width of 5 units. What is its area?,50 square units
+If 3x + 4 = 19 what is the value of x?,5
+The sum of three consecutive integers is 48. What are the integers?,15 or 16 or 17
+A car travels 150 miles in 3 hours. What is its average speed in miles per hour?,50 mph
+If the sides of a square are doubled by what factor does its area increase?,4 times
+A person invests $1000 at an annual interest rate of 5%. How much will they have after 2 years with simple interest?,"$1,100"
+If a right triangle has legs of lengths 3 and 4 what is the length of the hypotenuse?,5
+A cylindrical tank has a radius of 4 meters and a height of 10 meters. What is its volume?,502.65 cubic meters
+Solve for x: 2x^2 - 4x - 6 = 0,3 or -1
+A car depreciates in value by 15% per year. If it is currently worth $20000 what will it be worth in 3 years?,"$12,303.50"
+A company's revenue is modeled by the function R(x) = 50x - x^2 where x is the number of units sold. What is the maximum revenue?,625
+The population of a town increases by 10% each year. If the current population is 50000 what will it be in 5 years?,80525
+If a geometric series has a first term of 3 and a common ratio of 2 what is the sum of the first 5 terms?,93
+John's mother gave him $12 to go to the toy store. Dean bought 1 toy car and 5 teddy bears. Each toy car costs $2 and each teddy bear costs $1. His mother then feels generous and decides to give him an extra $10. How much money does Dean have left?,John's mother gave him $12. The cost of the toy car is $2 and the cost of the teddy bears is $1 each. Dean bought 1 toy car and 5 teddy bears: $2 + 5*$1 = $2 + $5 = $7. Deanâ€™s mother gives him an extra $10: $12 - $7 + $10 = $15. Dean has $15 left.
+Janet is required to submit a 5-page research paper. She already finished writing 1/5 of the paper. How many pages does she have left to write?,Janet has to write a 5-page paper. She has finished writing 1/5 of it: 1/5*5 = 1 page. She has 4 pages left to write.
+The cheese pizza is cut into 12 slices and the pepperoni pizza is cut into 8 slices. If Rachel's friends each eat 3 cheese pizza slices and 4 pepperoni pizza slices  how many pizza pies does she need to buy?,Rachel's friends each eat 3 cheese pizza slices and 4 pepperoni pizza slices. Each cheese pizza has 12 slices so each friend eats 3/12 = 1/4 of a cheese pizza. Each pepperoni pizza has 8 slices so each friend eats 4/8 = 1/2 of a pepperoni pizza. If Rachel has 8 friends she needs 8*1/4 = 2 cheese pizzas and 8*1/2 = 4 pepperoni pizzas. She needs to buy 2 cheese pizzas and 4 pepperoni pizzas.
+A perfume company is trying to create new scents. They already have 4 vanilla scents and 4 fruity scents available and they need to create which total number of scents to a part of their research. By the end of the day they sell 2 of each of the vanilla scents and 3 of each of the fruity scents available. How many vanilla scents are left compared with the fruity scents?,The perfume company started with 4 vanilla scents and 4 fruity scents. By the end of the day they sold 2 of each vanilla scent: 4 - 2 = 2 vanilla scents left. They also sold 3 of each fruity scent: 4 - 3 = 1 fruity scent left. There are 2 - 1 = 1 more vanilla scent left compared with the fruity scents.
+Caroline's math and science books weigh 2 pounds each. Her French book weighs 4 pounds and her English book weighs 3 pounds. Her history book weighs as much as half of her English book. If Cindy carries all of her books at school what will be the total weight of the books she is carrying?,Caroline's math and science books each weigh 2 pounds so 2*2 = 4 pounds. Her French book weighs 4 pounds and her English book weighs 3 pounds. Her history book weighs half of her English book so 3/2 = 1.5 pounds. The total weight is 4 + 4 + 3 + 1.5 = 12.5 pounds.
+Jeff and Brad are trying to divide 100 dollars between them. Jeff gets 4 times as much as Brad. How much does Jeff get in dollars?,Let the amount Brad gets be x dollars. Jeff gets 4 times as much so he gets 4x. The total is x + 4x = 5x = 100 dollars. So x = 100/5 = 20 dollars. Jeff gets 4*20 = 80 dollars.
+The K9 animal house keeps 3 German Shepherds and 2 Bulldogs. Each German Shepherd consumes 5 kilograms of dog food per day and a Bulldog consumes 3 kilograms of dog food per day. How many kilograms of dog food will they need in a week?,Each German Shepherd consumes 5 kg/day and each Bulldog consumes 3 kg/day. In total the German Shepherds consume 3*5 = 15 kg/day and the Bulldogs consume 2*3 = 6 kg/day. Combined they consume 15 + 6 = 21 kg/day. Over a week they will need 21*7 = 147 kg of dog food.
+Joey spends $2700 distributed between 5 schools to buy books. He can buy 100 books for $500. How many books can he buy per school?,Joey can buy 100 books for $500. So for $2700 he can buy (2700/500)*100 = 540 books. If he distributes them equally among 5 schools each school gets 540/5 = 108 books.
+If a right triangle has legs of lengths 6 and 8 what is the length of the hypotenuse?,"Using the Pythagorean theorem, the hypotenuse is the square root of (6^2 + 8^2) = sqrt(36 + 64) = sqrt(100) = 10."
+Create an identity for the expression cot(Î¸)csc(Î¸) by rewriting strictly in terms of sine.,"Using the definitions of cot and csc, we have cot(Î¸)csc(Î¸) = (cos(Î¸)/sin(Î¸))(1/sin(Î¸)) = cos(Î¸)/sin^2(Î¸). Rewriting in terms of sine, cot(Î¸)csc(Î¸) = cos(Î¸)/sin^2(Î¸)."
+Prove that the composition of any two increasing functions is increasing.,"Let f and g be given increasing functions. We claim that f â—¦ g is increasing. Given numbers x < y, we need to show that (f â—¦ g)(x) < (f â—¦ g)(y). Since g is increasing, g(x) < g(y). Since f is also increasing, applying the definition to f and g(x), g(y), we see that f(g(x)) < f(g(y)), or (f â—¦ g)(x) < (f â—¦ g)(y). Hence, f â—¦ g is increasing."
+Prove that the difference of any two increasing functions is decreasing.,"Let f and g be increasing functions, and x < y. As f is increasing, f(x) < f(y). Likewise, g(x) < g(y). Subtracting these inequalities, we see that (f - g)(x) = f(x) - g(x) < f(y) - g(y) = (f - g)(y), so f - g is decreasing."
+Prove that the function h : N → N defined by h(n) = floor(n/2) is surjective.,"To prove h is surjective, we must show that for every element m in N, there exists an element n in N such that h(n) = m. Let m be an arbitrary element of N. Notice that h(2m) = floor(2m/2) = m. Hence, m is in the range of h. Thus, h is surjective."
+Let f(x) = x^3 - 3x + 1. Prove that f(x) has at least one real root.,"By the Intermediate Value Theorem, if a continuous function changes sign over an interval, it has at least one root in that interval. Consider f(x) = x^3 - 3x + 1. Note that f(0) = 1 and f(1) = -1. Since f(x) is continuous, it must cross the x-axis between 0 and 1. Hence, f(x) has at least one real root."
+There are infinitely many prime numbers of the form 4k + 3.,"Proof. Suppose there are finitely many primes of the form 4k + 3: p1, p2, ..., pn. Consider the number N = 4(p1p2...pn)^2 + 3. N is of the form 4k + 3 and is not divisible by any of the primes p1, p2, ..., pn, leading to a contradiction. Hence, there are infinitely many primes of the form 4k + 3."
+The ratio of cats to dogs in a shelter is 7/5. If a few cats are adopted the ratio of cats to dogs becomes the reciprocal of the earlier ratio. What is the possible number of cats and dogs in the shelter?,"Let the initial number of cats be 7x and dogs be 5x. Let y be the number of cats adopted. Then the new ratio is 5/7. Setting up the equation 7x - y = 5/7 * 5x, we get 49x - 7y = 25x. Solving, we find 24x = 7y. Thus, y = 24x/7. Since x and y must be integers, 24x must be divisible by 7, so x must be a multiple of 7. Possible numbers of cats and dogs are (49, 35), (98, 70), etc."
+If n is a natural number prove that n^4 - n^2 is divisible by 2.,"Proof: let n be a natural number. We can factor n^4 - n^2 as n^2(n^2 - 1) = n^2(n - 1)(n + 1). Since n, n-1, and n+1 are three consecutive integers, at least one of them is even, making their product divisible by 2. Hence, n^4 - n^2 is divisible by 2."
+Prove that if x is a real number and x > 0 then sqrt(x) < x.,"Proof: If x > 0, then sqrt(x)^2 = x. Since x > sqrt(x) for any positive x (as squaring a positive number greater than 1 results in a larger number), we have sqrt(x) < x. q.e.d."
